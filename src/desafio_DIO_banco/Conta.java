@@ -33,6 +33,15 @@ public abstract class Conta implements Conta_ {
 		contaDestino.depositar(valor);
 	}
 	
+	public void pagamentoContas(String codigo, double valor) {
+		if (saldo >= valor) {
+            saldo -= valor;
+            System.out.println("Pagamento realizado com sucesso!");
+        } else {
+            System.out.println("Saldo insuficiente.");
+        }
+	}
+	
 	public int getAgencia() {
 		return agencia;
 	}

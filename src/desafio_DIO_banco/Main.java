@@ -8,13 +8,21 @@ public class Main {
 		
 		Conta cc = new ContaCorrente(janine);
 		
-		cc.depositar(100);
+		cc.depositar(200);
+		
+		cc.imprimirExtrato();
 		
 		Conta poupanca = new ContaPoupanca(janine);
 		
 		cc.transferir(100, poupanca);
+		
+		cc.imprimirExtrato();
+		
+		cc.pagamentoContas("157893475159971", 100);
+		
 		cc.imprimirExtrato();
 		poupanca.imprimirExtrato();
+		
 	}
 
 }

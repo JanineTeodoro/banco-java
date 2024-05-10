@@ -8,5 +8,7 @@ public interface Conta_ {
 	
 	void transferir(double valor, Conta contaDestino);
 	
+	void pagamentoContas(String codigo, double valor);
+	
 	void imprimirExtrato();
 }
